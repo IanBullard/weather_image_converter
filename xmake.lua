@@ -1,0 +1,5 @@
+add_requires("freeimage", "freetype", "glm", "fmt")
+target("console")
+    set_kind("binary")
+    add_files("*.cpp")
+    add_packages("freeimage", "freetype", "glm", "fmt")

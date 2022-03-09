@@ -1,5 +1,9 @@
 # Prerequisites
 *.d
+.vscode
+.xmake
+build
+out
 
 # Compiled Object files
 *.slo
