@@ -61,8 +61,8 @@ void save_image(const char* filename, FIBITMAP* bitmap)
 void convert_weather_icon(const char* name)
 {
     std::string filename(name);
-    std::string source_folder("C:\\Users\\ibull\\projects\\_local\\image_process\\images\\");
-    std::string dest_folder("C:\\Users\\ibull\\projects\\_local\\image_process\\out\\");
+    std::string source_folder("./images/");
+    std::string dest_folder("./out/");
 
     auto source = source_folder + filename;
     auto dest = dest_folder + filename;
@@ -81,7 +81,7 @@ void save_palette()
     {
         FreeImage_SetPixelColor(image, i, 0, &inky_palette[i]);
     }
-    save_image("C:\\Users\\ibull\\projects\\_local\\image_process\\out\\palette.png", image);
+    save_image("./out/palette.png", image);
     FreeImage_Unload(image);
 }
 
